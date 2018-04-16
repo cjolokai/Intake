@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>A little Angular site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="styles/app.css">
+  </head>
+  <body ng-app="myapp" >
+    <h2>Personal Information</h2>
+    <table class="tg">
+  <tr>
+    <th class="tg-baqh" colspan="6"></th>
+  </tr>
+  <tr>
+    <td class="tg-6k2t">First Name</td>
+    <td class="tg-6k2t"><input type="text" name="fname"><br></td>
+    <td class="tg-6k2t">Last Name</td>
+    <td class="tg-6k2t"><input type="text" name="fname"><br></td>
+    <td class="tg-6k2t">Maiden Name</td>
+    <td class="tg-6k2t"><input type="text" name="fname"><br></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Age</td>
+    <td class="tg-yw4l"><input type="text" name="fname"><br></td>
+    <td class="tg-lqy6">Birthplace </td>
+    <td class="tg-lqy6"><input type="text" name="fname"><br></td>
+    <td class="tg-lqy6">Gender</td>
+    <td class="tg-lqy6">
+          <select>
+            <option value="volvo">Male</option>
+            <option value="saab">Female</option>
+          </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-6k2t">Primary Language</td>
+    <td class="tg-6k2t"><input type="text" name="fname"></td>
+    <td class="tg-mb3i">Ethnicity</td>
+    <td class="tg-mb3i"><input type="text" name="fname"></td>
+    <td class="tg-mb3i">Marital Status</td>
+    <td class="tg-mb3i"><select>
+                          <option value="volvo">Single</option>
+                          <option value="saab">Married</option>
+                          <option value="mercedes">Widow(er)</option>
+                        </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Primary Contact Person</td>
+    <td class="tg-yw4l"><input type="text" name="fname"></td>
+    <td class="tg-lqy6">Primary Contact Phone</td>
+    <td class="tg-lqy6"><input type="text" name="fname"></td>
+    <td class="tg-lqy6">Primary Contact email</td>
+    <td class="tg-lqy6"><input type="text" name="fname"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Primary Contact Person</td>
+    <td class="tg-yw4l"><input type="text" name="fname"></td>
+    <td class="tg-lqy6">Primary Contact Phone</td>
+    <td class="tg-lqy6"><input type="text" name="fname"></td>
+    <td class="tg-lqy6">Primary Contact email</td>
+    <td class="tg-lqy6"><input type="text" name="fname"></td>
+  </tr>
+</table>
+ <hr>
+    <table class="tg">
+  <tr>
+    <th class="tg-baqh" colspan="6">Insurance Info</th>
+  </tr>
+  <tr>
+    <td class="tg-6k2t">Social Security#</td>
+    <td class="tg-6k2t"><input type="text" name="fname"><br></td>
+    <td class="tg-6k2t">MediCare</td>
+    <td class="tg-6k2t"><input type="text" name="fname"><br></td>
+    <td class="tg-6k2t">MediCaid</td>
+    <td class="tg-6k2t"><input type="text" name="fname"><br></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Health Insurance Co</td>
+    <td class="tg-yw4l"><input type="text" name="fname"><br></td>
+    <td class="tg-lqy6">Phone </td>
+    <td class="tg-lqy6"><input type="text" name="fname"><br></td>
+  </tr>
+      <tr>
+        <td class="tg-lqy6">Policy Number</td>
+        <td class="tg-lqy6"><input type="text" name="fname"></td>
+        <td class="tg-lqy6">Pre-authorization Required?</td>
+        <td class="tg-lqy6">
+          <select>
+            <option value=" "></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select></td>
+      </tr>
+    </table>
+    <hr>
+  <table class="tg">  
+  <tr>
+    <td class="tg-6k2t">Veteran</td>
+    <td class="tg-6k2t">
+        <select>
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+    </td>
+    <td class="tg-mb3i">Branch</td>
+    <td class="tg-mb3i">
+      <select>
+          <option value=" "> </option>  
+          <option value="Army">Army</option>
+          <option value="Navy">Navy</option>
+          <option value="Air Force">Air Force</option>
+          <option value="Marines">Marines</option>
+          <option value="Coast Guard">Coast Guard</option>
+        </select>
+    </td>
+    
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Other Insurance Coverage</td>
+    <td class="tg-yw4l">
+      <select>
+        <option value=" "></option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </td>
+    <td class="tg-lqy6">Policy Number</td>
+    <td class="tg-lqy6"><input type="text" name="fname"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Substitute Decision Maker</td>
+    <td class="tg-yw4l">
+      <select>
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+      </select>
+    </td>
+    <td class="tg-lqy6">Substitute Decision Maker Name</td>
+    <td class="tg-lqy6"><input type="text" name="fname"></td>
+    
+  </tr>
+      <tr>
+        <td class="tg-lqy6">Phone</td>
+        <td class="tg-lqy6"><input type="text" name="fname"></td>
+        <td class="tg-lqy6">Email</td>
+        <td class="tg-lqy6"><input type="text" name="fname"></td>
+        <td class="tg-lqy6">Type</td>
+        <td class="tg-lqy6">
+          <select>
+            <option value=" "></option>
+            <option value="Yes">Guardian</option>
+            <option value="No">POA</option>
+            <option value="No">DPOA</option>
+            <option value="No">Representative Payee</option>
+            <option value="No">Family member</option>
+          </select></td>
+      </tr>
+</table>
+<hr>
+    <div ng-app="MyApp" ng-controller="DrListController">
+      
+      <div class="containerDrlist">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form ng-submit="addNew()">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="drheader">Clinic Name</th>
+                                        <th class="drheader">Specialist</th>
+                                        <th class="drheader">Phone</th>
+                                        <th class="drheader">Fax</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="repeatingTable">
+                                    <tr ng-repeat="personalDetail in personalDetails" >
+                                        <span ng-class-even="'even'">
+                                          <td><input type="checkbox" ng-model="personalDetail.selected"/></td>
+                                          <td><input type="text" class="form-control" ng-model="personalDetail.clinicname" /></td>
+                                          <td><input type="text" class="form-control" ng-model="personalDetail.specname" /></td>
+                                          <td><input type="text" class="form-control" ng-model="personalDetail.phone" /></td>
+                                          <td><input type="text" class="form-control" ng-model="personalDetail.fax" /></td>
+                                        </span>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="form-group">
+                                <input ng-hide="!personalDetails.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove Specialist">
+                                <input type="submit" class="btn btn-primary addnew pull-right" value="Add New Specialist">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    </div>   
+    <hr>  
+    <table>
+      <tr>
+      <th>Preferred Hospital</th> 
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td><textarea cols="40" rows="1"></textarea></td>
+        <td>Phone</td>
+        <td><input type="text" name="prefHosPh"></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><textarea cols="40" rows="1"></textarea></td>
+      </tr>
+    </table>
+<hr> 
+    <table>
+      <tr>
+      <th>Advance Directives</th> 
+      </tr>
+      <tr>
+        <td class="tg-yw4l">
+          <select>
+            <option value=" "></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </td>
+        <td>
+        <td>With Whom?</td>
+        <td><input type="text" name="AdvDirName"></td>
+        <td>Phone</td>
+        <td><input type="text" name="AdvDirPh"></td>
+        </td>
+      </tr>
+    </table>
+<hr>
+    <table>
+      <tr>
+      <th>Funeral Arrangements</th> 
+      </tr>
+      <tr>
+        <td class="tg-yw4l">
+          <select>
+            <option value=" "></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </td>
+        <td>
+        <td>With Whom?</td>
+        <td><input type="text" name="AdvDirName"></td>
+        <td>Phone</td>
+        <td><input type="text" name="AdvDirPh"></td>
+        </td>
+      </tr>
+    </table>
+<hr>
+    <table>
+      <tr>
+        <td>Current Height:</td>
+        <td><input type="text"></input></td>
+        <td>Current Weight:</td>
+        <td><input type="text"></input></td>
+      </tr>  
+      <tr>
+        <td>Known Allregies</td>
+        <td><textarea cols="40" rows="4"></textarea></td>
+      </tr>
+    </table>
+<hr>
+    <table>
+      <tr>
+      <th>Current Medical Diagnosis</th> 
+      </tr>
+      <tr>
+        <td>Date of most recent exam</td>
+        <td class="tg-yw4l">
+          <input type="text" name="dateMostRecExam"></input>
+        </td>
+        <td>
+        <td>By Whom?</td>
+        <td><input type="text" name="AdvDirName"></td>
+      </tr>
+    </table>
+<hr>
+
+<div ng-controller="Diagnosis">
+      
+      <div class="containerDrlist">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form ng-submit="addNew()">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="drheader">Date</th>
+                                        <th class="drheader">Diagnosis</th>
+                                        <th class="drheader">By Whom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="diag in diags">
+                                        <td><input type="checkbox" ng-model="diag.selected"/></td>
+                                        <td><input type="text" class="form-control" ng-model="diag.date" /></td>
+                                        <td><input type="text" class="form-control" ng-model="diag.diagnosis" /></td>
+                                        <td><input type="text" class="form-control" ng-model="diag.bywhom" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="form-group">
+                                <input ng-hide="!diags.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove diagnosis">
+                                <input type="submit" class="btn btn-primary addnew pull-right" value="Add New Diagnosis">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    </div>   
+
+<hr>
+
+<table><tr><th class="tg-baqh" colspan="6">Current Prescribed Medications</th></tr></table>
+
+<div ng-controller="medication">
+      
+      <div class="containerDrlist">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form ng-submit="addNew()">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="drheader">Medication Name</th>
+                                        <th class="drheader">What is medication</br> being used for.</th>
+                                        <th class="drheader">Dosage, route </br>and frequency.</th>
+                                        <th class="drheader" style="word-wrap: break-word;">Special Instructions,                                                 </br> Notes, Common </br> Side Effects</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="medtable" ng-repeat="med in meds">
+                                        <td><input type="checkbox" ng-model="med.selected"/></td>
+                                        <td><input type="text" class="form-control" ng-model="med.name" /></td>
+                                        <td><input type="text" class="form-control" ng-model="med.use" /></td>
+                                        <td><input type="text" class="form-control" ng-model="med.dosage" /></td>
+                                        <td><input type="text" class="form-control" ng-model="med.special" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="form-group">
+                                <input ng-hide="!meds.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove Medication">
+                                <input type="submit" class="btn btn-primary addnew pull-right" value="Add New Medication">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+</br>
+<table>
+  <tr><td>Date:</td><td><input type="text" name="date"></input></td></tr>
+</table>
+<p>This list is only current at the time of assessment.
+  You may contact the Pharmacist or Physician to inquire about</br> contraindications.
+Please assess level of assistance required to take medications in the Activities of Daily Living section.
+</p>
+<hr>
+<p>Preferences and Choice in Daily Life </p>
+  <table>
+    <tr><td>Current or Prior Occupation:</td><td><input type="text" name="priorOccupation"</td></tr>
+    <tr><td>Education</td><td><input type="text" name="education"</td></tr>
+    <tr><td>Lifetime Hobbies</td><td><textarea name="hobbies" cols="40" rows="2"></textarea></td></tr>
+  </table>
+  <table>
+    <tr><td>Involvement Patterns:</td><td></td>
+      <td>
+        
+      </td>
+    </tr>
+    <tr><td>Prefer to be alone?</td><td><select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select></td>
+        <td>At ease with others?</td><td><select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select></td>
+        <td>Self-initiates with others?</td><td><select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select></td>
+        
+    </tr>
+    <tr>
+      <td>Enjoys group activities?</td><td><select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select></td>
+      <td>Enjoys new activities?</td><td><select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select></td>
+      <td>Limitations that impact involvement? </td><td><select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select></td></tr>
+  </table>
+  <table>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td><textarea name="Notes" cols="75" rows="5"></textarea></td><td></td></tr>
+  </table>
+<hr>
+  <table>
+    <tr><td>Family/Friends Relationship</td><td></td></tr>
+    <tr><td>Close Relationships?</td>
+      <td>
+        <select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </td>
+      <td>
+        If Yes, with whom?
+        <input type="text" name="closeRelationships"></input>
+      </td>
+    </tr>
+    <tr>
+      <td>Recent Loss of a family/friend?</td>
+      <td>
+        <select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      <td>
+        If Yes, with whom?
+        <input type="text" name="closeRelationships"></input>
+      </td>
+    </tr>
+    <tr>
+      <td>Strategies/items to increase comfort?</td>
+      <td>
+        <select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      <td>
+        If Yes, what?
+        <input type="text" name="closeRelationships"></input>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td><textarea name="Notes" cols="75" rows="5"></textarea></td><td></td></tr>
+  </table>
+<hr>
+  <table>
+    <tr><td>Social/Cultural Preferences</td><td></td></tr>
+    <tr><td>Cultural Considerations or Preferences?</td>
+      <td>
+        <select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </td>
+      <td>
+        Enjoys children?
+        <select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </td>
+      
+    </tr>
+    <tr>
+      <td>
+        Enjoys Pets?
+        <select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </td>
+      <td>
+        Has a pet they want to keep?
+        <select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      
+    </tr>
+  </table>
+  <table>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td><textarea name="Notes" cols="75" rows="5"></textarea></td><td></td></tr>
+  </table>
+<hr>
+
+<table>
+    <tr><td>Usual Patterns</td><td></td></tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="stays up late">Stays up late</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="Arises Early">Arises early</input>
+      </td>
+       <td>
+         <input type="checkbox" value="Sleeps in">Sleeps in</input>
+      </td>
+    </tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="Naps">Naps</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="Irregular sleep habits ">Irregular sleep habits </input>
+      </td>
+       <td>
+         <input type="checkbox" value="Awakes at night">Awakes at night</input>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td><textarea name="Notes" cols="75" rows="5"></textarea></td><td></td></tr>
+  </table>
+<hr>
+
+<table>
+    <tr><td>Finds strength in faith</td><td></td></tr>
+    <tr><td>Attends church activities?</td>
+      <td>
+        <select class="dropdown1">
+          <option value=" "></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </td>
+      <td>Where?</td><td><input type="text"></input></td>
+    </tr>
+  </table>
+  <table>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td><textarea name="Notes" cols="75" rows="5"></textarea></td><td></td></tr>
+  </table>
+<hr> 
+
+<table>
+    <tr><td>Preferred Household Activities</td><td></td></tr>
+  <tr><td>Enjoys helping with:</td></tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="Laundry">Laundry</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="Housecleaning">Housecleaning</input>
+      </td>
+       <td>
+         <input type="checkbox" value="Dishes">Sleeps in</input>
+      </td>
+    </tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="Cooking">Cooking</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="Other">Other</input>
+      </td>
+       <td>
+         <input type="text" placeholder="Enter other activities here"></input>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td><textarea name="Notes" cols="75" rows="5"></textarea></td><td></td></tr>
+  </table>
+<hr>
+
+<table>
+    <tr><td>Preferred Activity Time</td></tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="Morning">Morning</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="Afternoon">Afternoon</input>
+      </td>
+       <td>
+         <input type="checkbox" value="Evening">Evening</input>
+      </td>
+      <td>
+         <input type="checkbox" value="Night">Night</input>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td><textarea name="Notes" cols="75" rows="5"></textarea></td><td></td></tr>
+  </table>
+
+<hr>
+<table>
+    <tr><td>Activity Preferences</td></tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="Music">Music</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="Cards/Games">Cards/Games</input>
+      </td>
+       <td>
+         <input type="checkbox" value="Trips/Shopping">Trips/Shopping</input>
+      </td>
+    </tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="Gardening/Plants">Gardening/Plants</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="Time Outdoors">Time Outdoors</input>
+      </td>
+       <td>
+         <input type="checkbox" value="Talking/Conversing">Talking/Conversing</input>
+      </td>
+    </tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="Helping Others">Helping Others</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="Computers">Computers</input>
+      </td>
+       <td>
+         <input type="checkbox" value="Reading/Writing">Reading/Writing</input>
+      </td>
+    </tr>
+    <tr>
+      <td>
+         <input type="checkbox" value="Exercise/Sports">Exercise/Sports</input>
+      </td> 
+      <td>
+         <input type="checkbox" value="TV">TV</input>
+      </td>
+       <td>
+         <input type="checkbox" value="Crafts/Arts">Crafts/Arts</input>
+      </td>
+    </tr>
+  </table>
+  
+  <table>
+    <tr><td>Notes</td><td></td></tr>
+    <tr><td><textarea name="Notes" cols="75" rows="5"></textarea></td><td></td></tr>
+  </table>
+<hr>
+
+
+
+<hr>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  
+  <script src="scripts/app_copy.js"></script>   
+  </body>
+  
+</html>
