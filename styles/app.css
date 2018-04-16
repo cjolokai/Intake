@@ -1,0 +1,69 @@
+html {
+    background: #C7DBD0;
+   }
+   
+   body {
+     line-height: 1.4;
+    
+     margin: auto 15px;
+     
+   }
+   .tg-6k2t{
+     buffer: 1em;
+   }
+   .btn-primary{
+     margin-right: 10px;
+   }
+   .container{
+     margin: 20px 0;
+     
+   }
+   .drheader{
+     background-color:#D2E4FC;
+     vertical-align:top;
+   }
+   .even {
+     color: orange;
+   }
+   .btn-primary{
+     border-radius: 11px;
+     background-color:#078A60;
+     width: 11em;
+     height: 2em;
+   }
+   .btn-danger{
+     border-radius: 11px;
+     background-color:#BF002E;
+     width: 10em;
+     height: 2em;
+   }
+   /*.dropdown1{
+     border-radius: 5px;
+     background-color: #207245;
+     color: white;
+   } */
+   
+   input[value="Remove Specialist"]{
+     word-wrap: break-word;
+     color: white;
+   }
+   input[value="Add New Specialist"]{
+     word-wrap: break-word;
+     color: white;
+   }
+   input[value="Remove diagnosis"]{
+     word-wrap: break-word;
+     color: white;
+   }
+   input[value="Add New Diagnosis"]{
+     word-wrap: break-word;
+     color: white;
+   }
+   input[value="Remove Medication"]{
+     word-wrap: break-word;
+     color: white;
+   }
+   input[value="Add New Medication"]{
+     word-wrap: break-word;
+     color: white;
+   }
